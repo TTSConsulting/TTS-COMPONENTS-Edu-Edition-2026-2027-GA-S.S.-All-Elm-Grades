@@ -22,6 +22,7 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
         private Label copyrightLabel;
         private Button goToUnit1Button;
         private Button goToUnit2Button;
+        private Button goToUnit4Button; // Add this new button
         private Panel examplePanel;
         private Label exampleLabel;
 
@@ -165,6 +166,18 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
             };
             goToUnit2Button.Click += GoToUnit2Button_Click;
 
+            // Go to Unit 4 Button
+            goToUnit4Button = new Button
+            {
+                Text = "Unit 4: Culture →",
+                Location = new Point(550, 330),
+                Size = new Size(120, 30),
+                BackColor = Color.Purple,
+                ForeColor = Color.White,
+                Font = new Font("Arial", 9, FontStyle.Bold)
+            };
+            goToUnit4Button.Click += GoToUnit4Button_Click;
+
             // Copyright Label
             copyrightLabel = new Label
             {
@@ -189,6 +202,7 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
                 nextButton,
                 goToUnit1Button,
                 goToUnit2Button,
+                goToUnit4Button, // Add the new button
                 copyrightLabel
             });
 
@@ -270,6 +284,17 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
         {
             Unit_2__SSKH2_ unit2Form = new Unit_2__SSKH2_();
             unit2Form.Show();
+        }
+
+        // Add this new event handler method
+        private void GoToUnit4Button_Click(object sender, EventArgs e)
+        {
+            // Create and show Unit 4 form
+            Unit_4__SSKG1_ unit4Form = new Unit_4__SSKG1_();
+            unit4Form.Show();
+            
+            // Optional: Hide current form
+            // this.Hide();
         }
     }
 }
