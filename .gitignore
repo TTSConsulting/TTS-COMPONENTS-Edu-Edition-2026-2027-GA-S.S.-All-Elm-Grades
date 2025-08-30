@@ -17,7 +17,7 @@
 mono_crash.*
 
 # Build results
-[Bb]in/
+
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
@@ -360,3 +360,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+TTS‑COMPONENTS Education Edition 2026-2027 GA K/TTS‑COMPONENTS Education Edition 2026-2027 GA K/bin/Debug/net8.0-windows/TTS‑COMPONENTS Edu Editon GA K.deps.json
+TTS‑COMPONENTS Education Edition 2026-2027 GA K/TTS‑COMPONENTS Education Edition 2026-2027 GA K/bin/Debug/net8.0-windows/TTS‑COMPONENTS Edu Editon GA K.runtimeconfig.json
