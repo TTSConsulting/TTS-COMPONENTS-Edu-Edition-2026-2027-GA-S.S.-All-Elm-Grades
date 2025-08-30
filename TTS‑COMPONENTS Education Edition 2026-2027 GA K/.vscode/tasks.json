@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"TTS‑COMPONENTS Education Edition 2026-2027 GA K\\TTS‑COMPONENTS Education Edition 2026-2027 GA K.csproj"
+			],
+			"group": "build",
+			"problemMatcher": [
+				"$msCompile"
+			]
+		},
+		{
+			"label": "run",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"run",
+				"--project",
+				"TTS‑COMPONENTS Education Edition 2026-2027 GA K\\TTS‑COMPONENTS Education Edition 2026-2027 GA K.csproj"
+			],
+			"group": "build",
+			"dependsOn": "build"
+		}
+	]
+}
