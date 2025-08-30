@@ -29,6 +29,7 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
         private Button goToUnit3Button;
         private Button goToUnit4Button;
         private Button goToUnit5Button;
+        private Button goToUnit7Button; // Add this new button variable
 
         public Unit_6__SSKG3_()
         {
@@ -196,11 +197,21 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
             };
             goToUnit5Button.Click += (s, e) => { new Unit_5__SSKG2_cs().Show(); this.Hide(); };
 
+            // Add Unit 7 button
+            goToUnit7Button = new Button
+            {
+                Text = "Unit 7 (SSKCG1)",
+                Location = new Point(20, 540),
+                Size = new Size(100, 30),
+                BackColor = Color.LightCoral
+            };
+            goToUnit7Button.Click += (s, e) => { new Unit_7__SSKCG1_().Show();};
+
             // Previous Button
             previousButton = new Button
             {
                 Text = "← Previous",
-                Location = new Point(580, 500),
+                Location = new Point(680, 500),
                 Size = new Size(80, 30),
                 BackColor = Color.Orange
             };
@@ -210,7 +221,7 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
             nextButton = new Button
             {
                 Text = "Next →",
-                Location = new Point(670, 500),
+                Location = new Point(770, 500),
                 Size = new Size(80, 30),
                 BackColor = Color.Orange
             };
@@ -221,7 +232,7 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
             {
                 Text = "© 2026-2027 TTS-COMPONENTS Education Edition - Georgia Standards SSKG3",
                 Font = new Font("Arial", 8),
-                Location = new Point(20, 570),
+                Location = new Point(20, 580), // Move down to make room for Unit 7 button
                 Size = new Size(750, 20),
                 TextAlign = ContentAlignment.TopCenter,
                 ForeColor = Color.Gray
@@ -233,7 +244,7 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
                 titleLabel, unitLabel, addressComponentComboBox, addressPictureBox,
                 descriptionLabel, examplePanel, practiceLabel, studentAddressTextBox,
                 goToUnit1Button, goToUnit2Button, goToUnit3Button, goToUnit4Button,
-                goToUnit5Button, previousButton, nextButton, copyrightLabel
+                goToUnit5Button, goToUnit7Button, previousButton, nextButton, copyrightLabel
             });
 
             // Set default selection

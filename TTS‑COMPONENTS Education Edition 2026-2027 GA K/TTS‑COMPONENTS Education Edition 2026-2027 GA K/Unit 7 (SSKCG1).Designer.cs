@@ -1,6 +1,6 @@
 ﻿namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
 {
-    partial class Unit_6__SSKG3_
+    partial class Unit_7__SSKCG1_
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SuspendLayout();
-            // 
-            // Unit_6__SSKG3_
-            // 
-            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(957, 450);
-            Name = "Unit_6__SSKG3_";
-            Text = "TTS-COMPONENTS Education Edition - Georgia K Social Studies U6";
-            ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Unit_7__SSKCG1_";
         }
 
         #endregion

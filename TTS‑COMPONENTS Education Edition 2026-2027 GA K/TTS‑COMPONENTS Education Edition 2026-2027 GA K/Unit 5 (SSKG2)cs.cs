@@ -175,7 +175,7 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
                 Size = new Size(100, 30),
                 BackColor = Color.LightCoral
             };
-            goToUnit6Button.Click += (s, e) => { new Unit_6__SSKG3_().Show(); this.Hide(); };
+            goToUnit6Button.Click += (s, e) => { new Unit_6__SSKG3_().Show();};
 
             // Previous Button
             previousButton = new Button
