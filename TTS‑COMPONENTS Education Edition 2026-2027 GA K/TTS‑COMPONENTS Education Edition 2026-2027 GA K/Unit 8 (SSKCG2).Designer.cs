@@ -1,6 +1,6 @@
 ﻿namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
 {
-    partial class Unit_7__SSKCG1_
+    partial class Unit_8__SSKCG2_
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             SuspendLayout();
             // 
-            // Unit_7__SSKCG1_
+            // Unit_8__SSKCG2_
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(800, 450);
-            Name = "Unit_7__SSKCG1_";
-            Text = "TTS-COMPONENTS Education Edition - Georgia K Social Studies U7";
+            Name = "Unit_8__SSKCG2_";
+            Text = "TTS-COMPONENTS Education Edition - Georgia K Social Studies U8";
             ResumeLayout(false);
         }
 

@@ -28,6 +28,7 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
         private Button goToUnit4Button;
         private Button goToUnit5Button;
         private Button goToUnit6Button;
+        private Button goToUnit8Button; // Add this new button variable
 
         public Unit_7__SSKCG1_()
         {
@@ -186,6 +187,16 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
             };
             goToUnit6Button.Click += (s, e) => { new Unit_6__SSKG3_().Show(); this.Hide(); };
 
+            // Add Unit 8 button
+            goToUnit8Button = new Button
+            {
+                Text = "Unit 8 (SSKCG2)",
+                Location = new Point(20, 490),
+                Size = new Size(100, 30),
+                BackColor = Color.LightCoral
+            };
+            goToUnit8Button.Click += (s, e) => { new Unit_8__SSKCG2_().Show();};
+
             // Previous Button
             previousButton = new Button
             {
@@ -223,7 +234,7 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
                 titleLabel, unitLabel, citizenshipTopicComboBox, citizenshipPictureBox,
                 descriptionLabel, rulesPanel, goToUnit1Button, goToUnit2Button,
                 goToUnit3Button, goToUnit4Button, goToUnit5Button, goToUnit6Button,
-                previousButton, nextButton, copyrightLabel
+                goToUnit8Button, previousButton, nextButton, copyrightLabel
             });
 
             // Set default selection
