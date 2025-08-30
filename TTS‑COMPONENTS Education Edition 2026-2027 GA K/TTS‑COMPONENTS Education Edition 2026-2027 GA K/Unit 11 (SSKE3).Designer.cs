@@ -1,0 +1,45 @@
+﻿namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
+{
+    partial class Unit_11__SSKE3_
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            SuspendLayout();
+            // 
+            // Unit_11__SSKE3_
+            // 
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(800, 450);
+            Name = "Unit_11__SSKE3_";
+            Text = "TTS-COMPONENTS Education Edition - Georgia K Social Studies U11";
+            ResumeLayout(false);
+        }
+
+        #endregion
+    }
+}

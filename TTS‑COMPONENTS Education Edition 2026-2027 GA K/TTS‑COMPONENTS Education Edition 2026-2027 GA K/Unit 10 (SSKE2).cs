@@ -31,6 +31,7 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
         private Button goToUnit7Button;
         private Button goToUnit8Button;
         private Button goToUnit9Button;
+        private Button goToUnit11Button; // Add Unit 11 button
 
         public Unit_10__SSKE2_()
         {
@@ -42,7 +43,7 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
         {
             // Form settings
             this.Text = "Unit 10 - Earning Income by Working (SSKE2)";
-            this.Size = new Size(800, 700);
+            this.Size = new Size(800, 720); // Increased height for Unit 11 button
             this.BackColor = Color.LightGoldenrodYellow;
             this.StartPosition = FormStartPosition.CenterScreen;
 
@@ -141,7 +142,7 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
             {
                 Text = "Unit 1 (SSKH1)",
                 Location = new Point(20, 450),
-                Size = new Size(85, 30),
+                Size = new Size(75, 30),
                 BackColor = Color.LightCoral
             };
             goToUnit1Button.Click += (s, e) => { new Form1().Show(); this.Hide(); };
@@ -149,24 +150,24 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
             goToUnit2Button = new Button
             {
                 Text = "Unit 2 (SSKH2)",
-                Location = new Point(115, 450),
-                Size = new Size(85, 30),
+                Location = new Point(105, 450),
+                Size = new Size(75, 30),
                 BackColor = Color.LightCoral
             };
 
             goToUnit3Button = new Button
             {
                 Text = "Unit 3 (SSKH3)",
-                Location = new Point(210, 450),
-                Size = new Size(85, 30),
+                Location = new Point(190, 450),
+                Size = new Size(75, 30),
                 BackColor = Color.LightCoral
             };
 
             goToUnit4Button = new Button
             {
                 Text = "Unit 4 (SSKG1)",
-                Location = new Point(305, 450),
-                Size = new Size(85, 30),
+                Location = new Point(275, 450),
+                Size = new Size(75, 30),
                 BackColor = Color.LightCoral
             };
             goToUnit4Button.Click += (s, e) => { new Unit_4__SSKG1_().Show(); this.Hide(); };
@@ -174,8 +175,8 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
             goToUnit5Button = new Button
             {
                 Text = "Unit 5 (SSKG2)",
-                Location = new Point(400, 450),
-                Size = new Size(85, 30),
+                Location = new Point(360, 450),
+                Size = new Size(75, 30),
                 BackColor = Color.LightCoral
             };
             goToUnit5Button.Click += (s, e) => { new Unit_5__SSKG2_cs().Show(); this.Hide(); };
@@ -183,8 +184,8 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
             goToUnit6Button = new Button
             {
                 Text = "Unit 6 (SSKG3)",
-                Location = new Point(495, 450),
-                Size = new Size(85, 30),
+                Location = new Point(445, 450),
+                Size = new Size(75, 30),
                 BackColor = Color.LightCoral
             };
             goToUnit6Button.Click += (s, e) => { new Unit_6__SSKG3_().Show(); this.Hide(); };
@@ -192,36 +193,45 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
             goToUnit7Button = new Button
             {
                 Text = "Unit 7 (SSKCG1)",
-                Location = new Point(590, 450),
-                Size = new Size(90, 30),
+                Location = new Point(530, 450),
+                Size = new Size(85, 30),
                 BackColor = Color.LightCoral
             };
             goToUnit7Button.Click += (s, e) => { new Unit_7__SSKCG1_().Show(); this.Hide(); };
 
-            // Navigation Buttons - Second Row
             goToUnit8Button = new Button
             {
                 Text = "Unit 8 (SSKCG2)",
-                Location = new Point(20, 490),
-                Size = new Size(100, 30),
+                Location = new Point(625, 450),
+                Size = new Size(85, 30),
                 BackColor = Color.LightCoral
             };
             goToUnit8Button.Click += (s, e) => { new Unit_8__SSKCG2_().Show(); this.Hide(); };
 
+            // Navigation Buttons - Second Row
             goToUnit9Button = new Button
             {
                 Text = "Unit 9 (SSKE1)",
-                Location = new Point(130, 490),
-                Size = new Size(100, 30),
+                Location = new Point(20, 490),
+                Size = new Size(90, 30),
                 BackColor = Color.LightCoral
             };
             goToUnit9Button.Click += (s, e) => { new Unit_9__SSKE1_().Show(); this.Hide(); };
+
+            goToUnit11Button = new Button
+            {
+                Text = "Unit 11 (SSKE3)",
+                Location = new Point(120, 490),
+                Size = new Size(90, 30),
+                BackColor = Color.LightCoral
+            };
+            goToUnit11Button.Click += (s, e) => { new Unit_11__SSKE3_().Show(); this.Hide(); };
 
             // Previous Button
             previousButton = new Button
             {
                 Text = "← Previous Topic",
-                Location = new Point(480, 530),
+                Location = new Point(480, 540),
                 Size = new Size(120, 30),
                 BackColor = Color.Orange
             };
@@ -231,7 +241,7 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
             nextButton = new Button
             {
                 Text = "Next Topic →",
-                Location = new Point(610, 530),
+                Location = new Point(610, 540),
                 Size = new Size(120, 30),
                 BackColor = Color.Orange
             };
@@ -242,7 +252,7 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
             {
                 Text = "© 2026-2027 TTS-COMPONENTS Education Edition - Georgia Standards SSKE2",
                 Font = new Font("Arial", 8),
-                Location = new Point(20, 600),
+                Location = new Point(20, 620),
                 Size = new Size(750, 20),
                 TextAlign = ContentAlignment.TopCenter,
                 ForeColor = Color.Gray
@@ -254,8 +264,8 @@ namespace TTS_COMPONENTS_Education_Edition_2026_2027_GA_K
                 titleLabel, unitLabel, incomeTopicComboBox, incomePictureBox,
                 descriptionLabel, incomePanel, goToUnit1Button, goToUnit2Button,
                 goToUnit3Button, goToUnit4Button, goToUnit5Button, goToUnit6Button,
-                goToUnit7Button, goToUnit8Button, goToUnit9Button, previousButton, 
-                nextButton, copyrightLabel
+                goToUnit7Button, goToUnit8Button, goToUnit9Button, goToUnit11Button,
+                previousButton, nextButton, copyrightLabel
             });
 
             // Set default selection
