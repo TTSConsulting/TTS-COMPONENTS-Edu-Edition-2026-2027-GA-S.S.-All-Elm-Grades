@@ -6,7 +6,7 @@
 
 ## 📚 Overview
 
-TTS-COMPONENTS Educational Edition is a comprehensive interactive learning platform designed specifically for Georgia Social Studies standards across all elementary grades (K-2nd). This Windows Forms application suite provides engaging, standards-aligned educational content that helps students explore history, geography, civics, and economics through interactive lessons and activities.
+TTS-COMPONENTS Educational Edition GA is a comprehensive interactive learning platform designed specifically for Georgia Social Studies standards across all elementary grades (K-2nd). This Windows Forms application suite provides engaging, standards-aligned educational content that helps students explore history, geography, civics, and economics through interactive lessons and activities.
 
 ## 🎯 Educational Standards Alignment
 
